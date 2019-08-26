@@ -1,8 +1,8 @@
 package clazz.t1
 
 class Student{
-  private var name = ""
-  private var age = 0
+  private var name = _ // _ 表示给name一个默认值 如果是string类型 默认是""
+  private var age = _ // _ 表示给age一个默认值 如果是int类型 默认是0
 
   def this (name:String){
     this()
