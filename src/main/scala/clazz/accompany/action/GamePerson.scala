@@ -14,4 +14,8 @@ object GamePerson{
   def showNum(): Unit ={
     printf("当前共有%d人\n",total)
   }
+
+  def apply(joinName: String): GamePerson = new GamePerson(joinName)
+
+  def apply(): GamePerson = new GamePerson("anonymous")
 }
