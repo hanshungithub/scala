@@ -1,4 +1,4 @@
-package clazz.abs
+package clazz.abs.t1
 
 object AbsTest {
 
