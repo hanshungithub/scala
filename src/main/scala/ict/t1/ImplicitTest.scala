@@ -7,11 +7,18 @@ object ImplicitTest {
 
   def main(args: Array[String]): Unit = {
 
-    implicit def f1(d:Double):Int={
+    implicit def doubleToInt(d:Double):Int={
       d.toInt
+    }
+
+    implicit def floatToInt(param:Float): Int = {
+      param.toInt
     }
 
     val num:Int=3.5
     println("num =" + num)
+
+    val numTwo = 4.5f
+    println(numTwo)
   }
 }
