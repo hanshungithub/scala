@@ -1,6 +1,6 @@
-package fun
+package fun.t1
 
-import scala.math._
+import scala.math.ceil
 
 object FunOne {
 

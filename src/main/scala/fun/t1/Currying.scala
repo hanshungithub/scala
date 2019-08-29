@@ -1,4 +1,4 @@
-package fun
+package fun.t1
 
 object Currying {
   def main(args: Array[String]): Unit = {
