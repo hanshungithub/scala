@@ -32,10 +32,19 @@ object PartialFunTest {
       }
     }
 
+    def partialFunTwo:PartialFunction[Any,Int] = {
+      case i:Int => i+1
+      case j:Double => (j*2).toInt
+    }
+
     /**
      * 调用使用collect 需要放在偏函数后使用
      */
     val lists = list.collect(partialFun)
     println(lists)
+
+    val listTwo = List(1,2.3,4,"hassan")
+    val result = listTwo.collect(partialFunTwo)
+    println(result)
   }
 }
