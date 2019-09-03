@@ -56,12 +56,14 @@ class CustomerService {
 
   def findCustomerbById(id:Int):Customer={
     var index = -1
+    breakable{
       for (i <- 0 to customers.length){
         if (customers(i).id ==id){
           index = i
           break()
         }
       }
+    }
     customers(index)
   }
 

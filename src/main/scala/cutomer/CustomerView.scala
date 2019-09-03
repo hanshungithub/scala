@@ -22,7 +22,7 @@ class CustomerView {
       key = StdIn.readChar()
       key match {
         case '1' => this.add()
-        case '2' => println("update")
+        case '2' => this.update()
         case '3' => this.delete()
         case '4' => this.list()
         case '5' => this.loop = false
